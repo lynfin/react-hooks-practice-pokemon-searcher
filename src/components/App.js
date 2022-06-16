@@ -4,11 +4,11 @@ import PokemonPage from "./PokemonPage";
 function App() {
   // ┌ └ ─ ├ │
   // App
-  //  └ PokemonPage
+  //  └ PokemonPage [pokemons, searchTerm]
   //      ├ PokemonForm
   //      ├ Search
   //      └ PokemonCollection
-  //          └ PokemonCard
+  //          └ PokemonCard [displayedImage]
   return (
     <div className="App">
       <PokemonPage />
