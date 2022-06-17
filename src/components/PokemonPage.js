@@ -21,11 +21,15 @@ function PokemonPage() {
     setSearchTerm(searchUpdate);
   };
 
+  const addPokemon = (newPokemon) => {
+    setPokemons([...pokemons, newPokemon]);
+  };
+
   return (
     <Container>
       <h1>Pokemon Searcher</h1>
       <br />
-      <PokemonForm />
+      <PokemonForm onAddPokemon={addPokemon} />
       <br />
       <Search searchTerm={searchTerm} onUpdateSearchTerm={updateSearchTerm} />
       <br />
